@@ -1,8 +1,9 @@
 import lume from "lume/mod.ts";
+import jsx from "lume/plugins/jsx.ts";
 
 const site = lume();
 
-site.copy("index.html");
+site.use(jsx());
 site.copy("style.css");
 
 export default site;

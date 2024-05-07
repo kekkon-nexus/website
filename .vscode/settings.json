@@ -1,0 +1,9 @@
+{
+	"editor.defaultFormatter": "denoland.vscode-deno",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+		"editor.insertSpaces": true
+	}
+}

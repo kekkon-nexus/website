@@ -1,5 +1,5 @@
 import lume from "lume/mod.ts";
-import jsx from "lume/plugins/jsx.ts";
+import jsx from "lume/plugins/jsx_preact.ts";
 
 const site = lume();
 

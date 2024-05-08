@@ -15,7 +15,6 @@
 			"lume/types.ts"
 		],
 		"jsx": "react-jsx",
-    "jsxImportSource": "npm:react",
-    "jsxImportSourceTypes": "npm:@types/react"
+    "jsxImportSource": "npm:preact"
 	}
 }

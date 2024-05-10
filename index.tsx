@@ -6,7 +6,6 @@ export default () => (
 
 			<title>Kekkon Nexus</title>
 
-			{/* Fonts */}
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 			<link
@@ -14,12 +13,12 @@ export default () => (
 				rel="stylesheet"
 			/>
 
-			<link rel="stylesheet" href="style.css" />
+			<link rel="stylesheet" href="/style.css" />
 		</head>
 
 		<body>
 			<header>
-				<h1 class="vertical">
+				<h1 id="brand" class="writing-vlr">
 					<ruby>
 						結ꦲꦂꦠꦤ꧀ꦠ
 						<rt>

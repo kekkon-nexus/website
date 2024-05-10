@@ -27,7 +27,7 @@ export default () => (
 					</ruby>
 				</h1>
 				<p>
-					Soulbond
+					Kekkon<br />Nexus
 				</p>
 			</header>
 		</body>

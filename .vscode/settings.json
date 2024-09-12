@@ -1,7 +1,12 @@
 {
+	"editor.defaultFormatter": "biomejs.biome",
 	"editor.insertSpaces": false,
 	"editor.tabSize": 2,
 	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml",
 		"editor.insertSpaces": true
+	},
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	}
 }

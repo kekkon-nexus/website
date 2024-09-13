@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+	viewBox="0 0 100 100"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="nexus">
+			<stop offset="8.18019484660536%" stop-color="#f476b0" />
+			<stop offset="50%" stop-color="#27d4d9" />
+			<stop offset="91.81980515339464%" stop-color="#fad940" />
+		</linearGradient>
+	</defs>
+	<path
+		d="M 50,18.18019484660536
+			a 33.75 33.75 0 1 0 0,63.63961030678928
+			a 33.75 33.75 0 1 0 0,-63.63961030678928
+			z
+			M 50,23.75
+			a 26.25 26.25 0 1 0 0,52.5
+			a 26.25 26.25 0 1 0 0,-52.5
+			z"
+		transform="rotate(45 50 50)"
+		fill="url(#nexus)"
+		fill-rule="evenodd"
+	/>
+</svg>

@@ -19,7 +19,7 @@ export default jsxRenderer(({ children }) => {
 					crossorigin=""
 				/>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Javanese:wght@400..700&family=Recursive:wght,CASL@300..1000,1&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Javanese:wght@400..700&family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap"
 					rel="stylesheet"
 				/>
 

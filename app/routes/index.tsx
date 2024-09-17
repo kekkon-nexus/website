@@ -1,6 +1,6 @@
 export default () => (
 	<header>
-		<h1 id="brand" class="writing-vlr">
+		<h1 id="brand">
 			<ruby>
 				結ꦲꦂꦠꦤ꧀ꦠ
 				<rt>けっこん</rt>

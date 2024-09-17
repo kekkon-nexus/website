@@ -8,15 +8,19 @@
 @keyframes nexus {
 	0% {
 		color: #f476b0;
+		border-color: #f476b0;
 	}
 	33.333% {
 		color: #27d4d9;
+		border-color: #27d4d9;
 	}
 	66.667% {
 		color: #fad940;
+		border-color: #fad940;
 	}
 	100% {
 		color: #f476b0;
+		border-color: #f476b0;
 	}
 }
 
@@ -50,8 +54,5 @@ h1 {
 
 h1#brand {
 	margin: 1rem 0;
-}
-
-.writing-vlr {
 	writing-mode: vertical-lr;
 }

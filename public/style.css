@@ -47,12 +47,10 @@ header {
 	align-items: center;
 }
 
-h1 {
-	font-weight: 700;
-	font-size: 2rem;
-}
-
 h1#brand {
 	margin: 1rem 0;
+
+	font-weight: 700;
+	font-size: 2rem;
 	writing-mode: vertical-lr;
 }

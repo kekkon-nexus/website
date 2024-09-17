@@ -6,7 +6,7 @@ export default () => (
 				<rt>けっこん</rt>
 			</ruby>
 		</h1>
-		<p>
+		<p id="title">
 			Kekkon
 			<br />
 			Nexus

@@ -3,6 +3,7 @@
 	image-rendering: pixelated;
 
 	font-family: "Recursive", "Noto Sans JP", "Noto Sans Javanese", sans-serif;
+	font-synthesis: none;
 }
 
 @keyframes nexus {
@@ -53,4 +54,9 @@ h1#brand {
 	font-weight: 700;
 	font-size: 2rem;
 	writing-mode: vertical-lr;
+}
+
+p#title {
+	font-weight: 900;
+	font-variation-settings: "MONO" 1 "CASL" 0.5 "CRSV" 1 ;
 }

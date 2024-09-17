@@ -1,0 +1,13 @@
+{
+	"short_name": "Kekkon",
+	"name": "Kekkon Nexus",
+	"icons": [
+		{
+			"sizes": "any",
+			"src": "/favicon.svg"
+		}
+	],
+	"display": "standalone",
+	"theme_color": "#27d4d9",
+	"background_color": "#212121"
+}

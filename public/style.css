@@ -1,41 +1,57 @@
 :root {
-    color-scheme: light dark;
+	color-scheme: dark;
+	image-rendering: pixelated;
 
-    font-family: "Recursive", "Noto Sans JP", "Noto Sans Javanese", sans-serif;
+	font-family: "Recursive", "Noto Sans JP", "Noto Sans Javanese", sans-serif;
+}
+
+@keyframes nexus {
+	0% {
+		color: #f476b0;
+	}
+	33.333% {
+		color: #27d4d9;
+	}
+	66.667% {
+		color: #fad940;
+	}
+	100% {
+		color: #f476b0;
+	}
 }
 
 * {
-    margin: 0;
-    min-width: 0;
+	margin: 0;
+	min-width: 0;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+	width: 100%;
+	height: 100vh;
 
-    color: light-dark(#333b3c, #efefec);
-    background-color: light-dark(#efedea, #223a2c);
+	animation: nexus 10s linear infinite;
+	background: url("/static/bg.gif") repeat;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 header {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 2rem;
+	font-weight: 700;
+	font-size: 2rem;
 }
 
 h1#brand {
-    margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .writing-vlr {
-    writing-mode: vertical-lr;
+	writing-mode: vertical-lr;
 }

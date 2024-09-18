@@ -60,3 +60,36 @@ p#title {
 	font-variation-settings: "MONO" 1, "CASL" 0.5, "CRSV" 1;
 	line-height: 1;
 }
+
+.impressum {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 0.125rem;
+
+	text-align: center;
+	font-variation-settings: "MONO" 1;
+	font-size: xx-small;
+	color: #fff;
+	background: #212121;
+}
+
+.impressum a:link {
+	color: #fff;
+	opacity: 50%;
+}
+
+.impressum a:visited {
+	color: #fff;
+	opacity: 50%;
+}
+
+.impressum a:hover {
+	color: #fff;
+	opacity: 100%;
+}
+
+.impressum a:active {
+	color: #aaa;
+	opacity: 100%;
+}

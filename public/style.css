@@ -26,6 +26,11 @@
 	min-width: 0;
 }
 
+a {
+	color: inherit;
+  text-decoration: inherit;
+}
+
 body {
 	width: 100%;
 	height: 100vh;
@@ -79,13 +84,7 @@ p#title {
 	opacity: 50%;
 }
 
-.impressum a:visited {
-	color: #fff;
-	opacity: 50%;
-}
-
 .impressum a:hover {
-	color: #fff;
 	opacity: 100%;
 }
 

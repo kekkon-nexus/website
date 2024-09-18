@@ -9,7 +9,7 @@
 	},
 	"private": true,
 	"dependencies": {
-		"hono": "^4.6.1",
+		"hono": "^4.6.2",
 		"honox": "^0.1.24"
 	},
 	"devDependencies": {
@@ -17,8 +17,8 @@
 		"@cloudflare/workers-types": "^4.20240909.0",
 		"@hono/vite-cloudflare-pages": "^0.4.2",
 		"@hono/vite-dev-server": "^0.16.0",
-		"vite": "^5.4.5",
-		"wrangler": "^3.78.2"
+		"vite": "^5.4.6",
+		"wrangler": "^3.78.4"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

@@ -1,6 +1,6 @@
 export default () => (
 	<>
-		<main class="nexus">
+		<main class="center nexus">
 			<h1 id="brand">
 				<ruby>
 					結ꦲꦂꦠꦤ꧀ꦠ

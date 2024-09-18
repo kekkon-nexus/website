@@ -37,7 +37,7 @@ body {
 	justify-content: center;
 }
 
-header {
+.center {
 	display: flex;
 	flex-flow: column;
 	align-items: center;

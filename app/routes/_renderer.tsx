@@ -10,7 +10,7 @@ export default jsxRenderer(({ children }) => {
 				<title>Kekkon Nexus</title>
 
 				<link rel="icon" href="/favicon.svg" />
-        <link rel="manifest" href="/app.webmanifest" />
+				<link rel="manifest" href="/app.webmanifest" />
 
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link

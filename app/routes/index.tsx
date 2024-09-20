@@ -3,7 +3,8 @@ export default () => (
 		<main class="center nexus">
 			<h1 id="brand">
 				<ruby>
-					結ꦲꦂꦠꦤ꧀ꦠ
+					<span>結</span>
+					<span>ꦲꦂꦠꦤ꧀ꦠ</span>
 					<rt>けっこん</rt>
 				</ruby>
 			</h1>

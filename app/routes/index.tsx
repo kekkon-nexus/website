@@ -14,8 +14,8 @@ export default () => (
 				Nexus
 			</p>
 		</main>
-		<footer class="impressum">
-			<a href="/impressum">Impressum</a>
+		<footer class="about">
+			<a href="/about">about</a>
 		</footer>
 	</>
 );

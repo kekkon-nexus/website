@@ -1,5 +1,5 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import { Script } from "honox/server";
+import { Link, Script } from "honox/server";
 
 export default jsxRenderer(({ children }, c) => {
 	// Workaround to always include client script
@@ -28,7 +28,7 @@ export default jsxRenderer(({ children }, c) => {
 					rel="stylesheet"
 				/>
 
-				<link rel="stylesheet" href="/style.css" />
+				<Link href="/app/style.css" rel="stylesheet" />
 				<Script src="/app/client.ts" nonce={c.get("secureHeadersNonce")} />
 			</head>
 			<body hx-boost="true" hx-ext="preload">

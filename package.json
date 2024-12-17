@@ -18,8 +18,10 @@
 		"@hono/vite-build": "^1.2.0",
 		"@hono/vite-dev-server": "^0.17.0",
 		"@rollup/plugin-inject": "^5.0.5",
+		"@tailwindcss/vite": "^4.0.0-beta.8",
 		"htmx-ext-preload": "^2.1.0",
 		"htmx.org": "^2.0.4",
+		"tailwindcss": "^4.0.0-beta.8",
 		"typed-htmx": "^0.3.1",
 		"vite": "^6.0.3",
 		"wrangler": "^3.96.0"

@@ -1,3 +1,1 @@
-import { createClient } from 'honox/client'
-
-createClient()
+import "htmx-ext-preload";

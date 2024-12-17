@@ -15,7 +15,7 @@ export default () => (
 			</p>
 		</main>
 		<footer class="about">
-			<a href="/about">about</a>
+			<a href="/about" preload="mouseover">about</a>
 		</footer>
 	</>
 );

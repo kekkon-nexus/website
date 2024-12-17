@@ -1,7 +1,11 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import type { Manifest } from "vite";
+import { Script } from "honox/server";
 
 export default jsxRenderer(({ children }, c) => {
+	// Workaround to always include client script
+	// See honojs/honox#241
+	c.set("__importing_islands", true);
+
 	return (
 		<html lang="en">
 			<head>
@@ -25,10 +29,7 @@ export default jsxRenderer(({ children }, c) => {
 				/>
 
 				<link rel="stylesheet" href="/style.css" />
-				<Script
-					src="/app/client.ts"
-					nonce={c.get("secureHeadersNonce")}
-				/>
+				<Script src="/app/client.ts" nonce={c.get("secureHeadersNonce")} />
 			</head>
 			<body hx-boost="true" hx-ext="preload">
 				{children}
@@ -36,51 +37,3 @@ export default jsxRenderer(({ children }, c) => {
 		</html>
 	);
 });
-
-// Copied from honox and remove HasIsland
-// This makes the script to be included at all times for HTMX to work
-const Script = (options: {
-	src: string;
-	async?: boolean;
-	prod?: boolean;
-	manifest?: Manifest;
-	nonce?: string;
-}) => {
-	const src = options.src;
-	if (options.prod ?? import.meta.env.PROD) {
-		let manifest = options.manifest;
-		if (!manifest) {
-			const MANIFEST = import.meta.glob("/dist/.vite/manifest.json", {
-				eager: true,
-			}) as Record<string, { default: Manifest }>;
-			for (const [, manifestFile] of Object.entries(MANIFEST)) {
-				if (manifestFile.default) {
-					manifest = manifestFile.default;
-					break;
-				}
-			}
-		}
-		if (manifest) {
-			const scriptInManifest = manifest[src.replace(/^\//, "")];
-			if (scriptInManifest) {
-				return (
-					<script
-						type="module"
-						src={`/${scriptInManifest.file}`}
-						async={!!options.async}
-						nonce={options.nonce}
-					/>
-				);
-			}
-		}
-		return <></>;
-	}
-	return (
-		<script
-			type="module"
-			src={src}
-			async={!!options.async}
-			nonce={options.nonce}
-		/>
-	);
-};

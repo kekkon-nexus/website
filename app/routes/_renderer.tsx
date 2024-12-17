@@ -27,7 +27,6 @@ export default jsxRenderer(({ children }, c) => {
 				<link rel="stylesheet" href="/style.css" />
 				<Script
 					src="/app/client.ts"
-					async
 					nonce={c.get("secureHeadersNonce")}
 				/>
 			</head>

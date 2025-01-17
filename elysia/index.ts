@@ -1,7 +1,17 @@
 import { Elysia } from "elysia";
+import type { Context } from "elysia";
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+interface CF extends Context {
+	env: Env;
+	ctx: ExecutionContext;
+}
 
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-);
+const app = new Elysia({ aot: false }).get("/", (c: CF) => {
+	console.log(c.ctx.waitUntil);
+	return "Hello Elysia on Workers";
+});
+
+export default {
+	fetch: (request: Request, env: Env, ctx: ExecutionContext) =>
+		app.decorate({ env, ctx }).handle(request),
+};

@@ -8,6 +8,8 @@
 		"jsx": "react-jsx",
 		"allowJs": false,
 
+		"types": ["@cloudflare/workers-types/experimental"],
+
 		// Bundler mode
 		"moduleResolution": "bundler",
 		"allowImportingTsExtensions": true,

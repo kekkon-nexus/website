@@ -1,7 +1,7 @@
 name = "website"
-compatibility_date = "2024-11-11"
+compatibility_date = "2025-01-09"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "./dist"
+main = "elysia/index.ts"
 
 # [vars]
 # MY_VAR = "my-variable"

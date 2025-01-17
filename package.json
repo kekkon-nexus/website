@@ -1,28 +1,30 @@
 {
 	"name": "@kekkon.nexus/website",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build --mode client && vite build",
-		"preview": "wrangler pages dev",
-		"deploy": "bun run build && wrangler pages deploy"
+	"version": "2.0.0",
+	"homepage": "https://kekkon.nexus",
+	"repository": "kekkon-nexus:website",
+	"bugs": {
+		"url": "https://github.com/kekkon-nexus/website/issues"
 	},
+	"contributors": [
+		"Ryan Suhartanto <suhartanto@kekkon.nexus>",
+		"Yuuki Rika <yvvki@kekkon.nexus>"
+	],
 	"private": true,
+	"type": "module",
+	"module": "elysia/index.ts",
+	"scripts": {
+		"dev": "bun run --watch elysia/index.ts"
+	},
 	"dependencies": {
-		"hono": "^4.6.14",
-		"honox": "^0.1.27"
+		"elysia": "^1.2"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@cloudflare/workers-types": "^4.20241216.0",
-		"@hono/vite-build": "^1.2.0",
-		"@hono/vite-dev-server": "^0.17.0",
-		"@rollup/plugin-inject": "^5.0.5",
-		"htmx-ext-preload": "^2.1.0",
-		"htmx.org": "^2.0.4",
-		"typed-htmx": "^0.3.1",
-		"vite": "^6.0.3",
-		"wrangler": "^3.96.0"
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

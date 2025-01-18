@@ -6,12 +6,9 @@ interface CF extends Context {
 	ctx: ExecutionContext;
 }
 
-const app = new Elysia({ aot: false }).get("/", (c: CF) => {
+export const app = new Elysia({ aot: false }).get("/", (c: CF) => {
 	console.log(c.ctx.waitUntil);
 	return "Hello Elysia on Workers";
 });
 
-export default {
-	fetch: (request: Request, env: Env, ctx: ExecutionContext) =>
-		app.decorate({ env, ctx }).handle(request),
-};
+export default app;

@@ -1,5 +1,16 @@
 {
 	"name": "@kekkon.nexus/website",
+	"version": "1.0.0",
+	"homepage": "https://kekkon.nexus",
+	"repository": "kekkon-nexus:website",
+	"bugs": {
+		"url": "https://github.com/kekkon-nexus/website/issues"
+	},
+	"contributors": [
+		"Ryan Suhartanto <suhartanto@kekkon.nexus>",
+		"Yuuki Rika <yvvki@kekkon.nexus>"
+	],
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -7,7 +18,6 @@
 		"preview": "wrangler pages dev",
 		"deploy": "bun run build && wrangler pages deploy"
 	},
-	"private": true,
 	"dependencies": {
 		"hono": "^4.6.14",
 		"honox": "^0.1.27"

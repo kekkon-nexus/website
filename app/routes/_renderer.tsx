@@ -31,7 +31,11 @@ export default jsxRenderer(({ children }, c) => {
 				<Link href="/app/style.css" rel="stylesheet" />
 				<Script src="/app/client.ts" nonce={c.get("secureHeadersNonce")} />
 			</head>
-			<body hx-boost="true" hx-ext="preload">
+			<body
+				hx-boost="true"
+				hx-ext="preload"
+				class="w-full min-h-screen scheme-dark font-sans text-white flex items-center justify-center image-pixelated bg-pattern bg-repeat"
+			>
 				{children}
 			</body>
 		</html>

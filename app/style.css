@@ -1,120 +1,59 @@
-:root {
-	color-scheme: dark;
+@import "tailwindcss";
+
+@theme {
+	--font-*: initial;
+	--font-sans: "Recursive", "Noto Sans JP", "Noto Sans Javanese", sans-serif;
+	--font-synthesis: none;
+
+	--color-*: initial;
+	--shadow-*: initial;
+
+	--background-image-pattern: url("/static/bg.gif");
+
+	--animate-nexus: nexus 10s linear infinite;
+
+	@keyframes nexus {
+		0% {
+			color: #f476b0;
+		}
+		33.333% {
+			color: #27d4d9;
+		}
+		66.667% {
+			color: #fad940;
+		}
+		100% {
+			color: #f476b0;
+		}
+	}
+}
+
+@layer base {
+	/* https://stackoverflow.com/q/78995150/14511192 */
+	@font-face {
+		font-family: "Noto Sans Javanese";
+		font-style: normal;
+		font-weight: 400 700;
+		font-display: swap;
+		src: url(https://fonts.gstatic.com/s/notosansjavanese/v23/2V0AKJkDAIA6Hp4zoSScDjV0Y-eoHAH507U9dp0.woff2)
+			format("woff2");
+		unicode-range: U+200C-200D, U+25CC, U+A980-A9DF;
+		ascent-override: 175%;
+	}
+}
+
+@utility image-pixelated {
 	image-rendering: pixelated;
-
-	font-family: "Recursive", "Noto Sans JP", "Noto Sans Javanese", sans-serif;
-	font-variation-settings: "MONO" 1;
-	font-synthesis: none;
 }
 
-/* https://stackoverflow.com/q/78995150/14511192 */
-@font-face {
-	font-family: "Noto Sans Javanese";
-	font-style: normal;
-	font-weight: 400 700;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/notosansjavanese/v23/2V0AKJkDAIA6Hp4zoSScDjV0Y-eoHAH507U9dp0.woff2)
-		format("woff2");
-	unicode-range: U+200C-200D, U+25CC, U+A980-A9DF;
-	ascent-override: 175%;
-}
-
-@keyframes nexus {
-	0% {
-		color: #f476b0;
-	}
-	33.333% {
-		color: #27d4d9;
-	}
-	66.667% {
-		color: #fad940;
-	}
-	100% {
-		color: #f476b0;
-	}
-}
-
-* {
-	margin: 0;
-	min-width: 0;
-}
-
-a {
-	color: inherit;
-	text-decoration: inherit;
-}
-
-body {
-	width: 100%;
-	min-height: 100vh;
-
-	background: url("/static/bg.gif") repeat;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.center {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
-.nexus {
-	animation: nexus 10s linear infinite;
-}
-
-h1#brand {
-	margin: 1rem 0;
-
-	font-weight: 700;
-	font-size: 2rem;
+@utility writing-vertical {
 	writing-mode: vertical-lr;
 }
 
-p#title {
-	font-weight: 900;
+@utility font-display {
 	font-variation-settings: "MONO" 1, "CASL" 0.5, "CRSV" 1;
-	line-height: 1;
 }
 
-footer.about {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	padding: 0.125rem;
-
-	text-align: center;
+@utility font-mono {
 	font-variation-settings: "MONO" 1;
-	font-size: xx-small;
-	color: #fff;
-	background: #212121;
-}
-
-footer.about a:link {
-	color: #fff;
-	opacity: 50%;
-}
-
-footer.about a:hover {
-	opacity: 100%;
-}
-
-footer.about a:active {
-	color: #aaa;
-	opacity: 100%;
-}
-
-.about {
-	max-width: 50rem;
-	padding: 5rem;
-}
-
-ul {
-	padding-left: 1rem;
-}
-
-li {
-	padding-top: 0.5rem;
 }

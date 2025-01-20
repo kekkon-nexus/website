@@ -17,11 +17,11 @@ export default () => (
 				Nexus
 			</p>
 		</main>
-		<footer class="fixed bottom-0 w-full p-0.5 bg-[#212121] font-mono text-center text-[xx-small] text-white">
+		<footer class="fixed bottom-0 w-full p-0.5 bg-gray-mix font-mono text-center text-[xx-small] text-white">
 			<a
 				href="/about"
 				preload="mouseover"
-				class="opacity-50 hover:opacity-100 active:opacity-100 active:text-[#aaa]"
+				class="opacity-50 hover:opacity-100 active:opacity-100 active:text-white/80"
 			>
 				about
 			</a>

@@ -8,6 +8,11 @@
 	--color-*: initial;
 	--shadow-*: initial;
 
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray: #2a2a2a;
+	--color-gray-mix: #151515;
+
 	--background-image-pattern: url("/static/bg.gif");
 
 	--animate-nexus: nexus 10s linear infinite;

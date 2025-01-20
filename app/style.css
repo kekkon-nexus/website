@@ -60,3 +60,12 @@
 @utility font-mono {
 	font-variation-settings: "MONO" 1;
 }
+
+@utility text-stroke-2 {
+	paint-order: stroke fill;
+	-webkit-text-stroke-width: 0.5rem;
+}
+
+@utility text-stroke-gray-mix {
+	-webkit-text-stroke-color: var(--color-gray-mix);
+}

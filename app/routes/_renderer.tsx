@@ -1,7 +1,11 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import type { Manifest } from "vite";
+import { Link, Script } from "honox/server";
 
 export default jsxRenderer(({ children }, c) => {
+	// Workaround to always include client script
+	// See honojs/honox#241
+	c.set("__importing_islands", true);
+
 	return (
 		<html lang="en">
 			<head>
@@ -24,63 +28,16 @@ export default jsxRenderer(({ children }, c) => {
 					rel="stylesheet"
 				/>
 
-				<link rel="stylesheet" href="/style.css" />
-				<Script
-					src="/app/client.ts"
-					nonce={c.get("secureHeadersNonce")}
-				/>
+				<Link href="/app/style.css" rel="stylesheet" />
+				<Script src="/app/client.ts" nonce={c.get("secureHeadersNonce")} />
 			</head>
-			<body hx-boost="true" hx-ext="preload">
+			<body
+				hx-boost="true"
+				hx-ext="preload"
+				class="w-full min-h-screen scheme-dark font-sans text-white text-stroke-2 text-stroke-gray-mix flex items-center justify-center image-pixelated bg-pattern bg-repeat"
+			>
 				{children}
 			</body>
 		</html>
 	);
 });
-
-// Copied from honox and remove HasIsland
-// This makes the script to be included at all times for HTMX to work
-const Script = (options: {
-	src: string;
-	async?: boolean;
-	prod?: boolean;
-	manifest?: Manifest;
-	nonce?: string;
-}) => {
-	const src = options.src;
-	if (options.prod ?? import.meta.env.PROD) {
-		let manifest = options.manifest;
-		if (!manifest) {
-			const MANIFEST = import.meta.glob("/dist/.vite/manifest.json", {
-				eager: true,
-			}) as Record<string, { default: Manifest }>;
-			for (const [, manifestFile] of Object.entries(MANIFEST)) {
-				if (manifestFile.default) {
-					manifest = manifestFile.default;
-					break;
-				}
-			}
-		}
-		if (manifest) {
-			const scriptInManifest = manifest[src.replace(/^\//, "")];
-			if (scriptInManifest) {
-				return (
-					<script
-						type="module"
-						src={`/${scriptInManifest.file}`}
-						async={!!options.async}
-						nonce={options.nonce}
-					/>
-				);
-			}
-		}
-		return <></>;
-	}
-	return (
-		<script
-			type="module"
-			src={src}
-			async={!!options.async}
-			nonce={options.nonce}
-		/>
-	);
-};

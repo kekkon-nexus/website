@@ -1,7 +1,10 @@
 export default () => (
 	<>
-		<main class="about">
-			<h1>/about</h1>
+		<main class="max-w-240 p-20">
+			<h1 class="text-4xl font-bold">
+				{/* biome-ignore lint/a11y/useValidAnchor: current */}
+				<a href="#">/about</a>
+			</h1>
 
 			<br />
 
@@ -15,7 +18,7 @@ export default () => (
 
 			<br />
 
-			<h2 class="mission">
+			<h2 id="mission" class="text-2xl font-bold">
 				<a href="#mission">#mission</a>
 			</h2>
 			<p>
@@ -27,16 +30,16 @@ export default () => (
 
 			<br />
 
-			<h2 class="management">
+			<h2 id="management" class="text-2xl font-bold">
 				<a href="#management">#management</a>
 			</h2>
-			<ul>
-				<li>
+			<ul class="pl-4 list-disc">
+				<li class="pt-2">
 					<b>Ryan Suhartanto</b>
 					<br />
 					Responsible for business, legal, and economic aspects.
 				</li>
-				<li>
+				<li class="pt-2">
 					<b>Yuuki Rika</b>
 					<br />
 					Embodies the creative spirit of Kekkon Nexus. Yuuki Rika represents a
@@ -48,7 +51,7 @@ export default () => (
 
 			<br />
 
-			<h2 class="contact">
+			<h2 id="contact" class="text-2xl font-bold">
 				<a href="#contact">#contact</a>
 			</h2>
 			<a href="mailto:suhartanto@kekkon.nexus">suhartanto@kekkon.nexus</a>

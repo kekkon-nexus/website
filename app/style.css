@@ -1,0 +1,72 @@
+@import "tailwindcss" source(none);
+@source "./";
+
+@theme {
+	--font-*: initial;
+	--font-sans: "Recursive", "Noto Sans JP", "Noto Sans Javanese", sans-serif;
+	--font-synthesis: none;
+
+	--color-*: initial;
+	--shadow-*: initial;
+
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray: #2a2a2a;
+	--color-gray-mix: #1f1f1f;
+
+	--background-image-pattern: url("/static/bg.gif");
+
+	--animate-nexus: nexus 10s linear infinite;
+
+	@keyframes nexus {
+		0% {
+			color: #f476b0;
+		}
+		33.333% {
+			color: #27d4d9;
+		}
+		66.667% {
+			color: #fad940;
+		}
+		100% {
+			color: #f476b0;
+		}
+	}
+}
+
+/* https://stackoverflow.com/q/78995150/14511192 */
+@font-face {
+	font-family: "Noto Sans Javanese";
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/notosansjavanese/v23/2V0AKJkDAIA6Hp4zoSScDjV0Y-eoHAH507U9dp0.woff2)
+		format("woff2");
+	unicode-range: U+200C-200D, U+25CC, U+A980-A9DF;
+	ascent-override: 175%;
+}
+
+@utility image-pixelated {
+	image-rendering: pixelated;
+}
+
+@utility writing-vertical {
+	writing-mode: vertical-lr;
+}
+
+@utility font-display {
+	font-variation-settings: "MONO" 1, "CASL" 0.5, "CRSV" 1;
+}
+
+@utility font-mono {
+	font-variation-settings: "MONO" 1;
+}
+
+@utility text-stroke-2 {
+	paint-order: stroke fill;
+	-webkit-text-stroke-width: 0.5rem;
+}
+
+@utility text-stroke-gray-mix {
+	-webkit-text-stroke-color: var(--color-gray-mix);
+}

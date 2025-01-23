@@ -19,22 +19,22 @@
 		"deploy": "bun run build && wrangler pages deploy"
 	},
 	"dependencies": {
-		"hono": "^4.6.17",
-		"honox": "^0.1.32"
+		"hono": "^4.6.18",
+		"honox": "^0.1.33"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@cloudflare/workers-types": "^4.20250109.0",
+		"@cloudflare/workers-types": "^4.20250121.0",
 		"@hono/vite-build": "^1.2.1",
 		"@hono/vite-dev-server": "^0.17.0",
 		"@rollup/plugin-inject": "^5.0.5",
-		"@tailwindcss/vite": "^4.0.0-beta.9",
+		"@tailwindcss/vite": "^4.0.0",
 		"htmx-ext-preload": "^2.1.0",
 		"htmx.org": "^2.0.4",
-		"tailwindcss": "^4.0.0-beta.9",
+		"tailwindcss": "^4.0.0",
 		"typed-htmx": "^0.3.1",
-		"vite": "^6.0.8",
-		"wrangler": "^3.103.2"
+		"vite": "^6.0.11",
+		"wrangler": "^3.105.0"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

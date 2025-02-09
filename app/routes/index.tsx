@@ -3,7 +3,7 @@ export default () => (
 		<main class="flex animate-nexus flex-col items-center">
 			<h1
 				id="brand"
-				class="writing-vertical mx-4 font-bold text-3xl leading-normal"
+				class="mx-4 font-bold text-3xl leading-normal [writing-mode:vertical-lr]"
 			>
 				<ruby>
 					<span>結</span>
@@ -17,7 +17,7 @@ export default () => (
 				Nexus
 			</p>
 		</main>
-		<footer class="fixed bottom-0 w-full bg-gray-mix p-0.5 text-center font-mono text-[xx-small] text-white">
+		<footer class="fixed bottom-0 w-full bg-gray-50 p-0.5 text-center font-mono text-[xx-small] text-white">
 			<a
 				href="/about"
 				preload="mouseover"

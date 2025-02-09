@@ -34,7 +34,7 @@ export default jsxRenderer(({ children }, c) => {
 			<body
 				hx-boost="true"
 				hx-ext="preload"
-				class="scheme-dark image-pixelated flex min-h-screen w-full items-center justify-center bg-pattern bg-repeat font-sans text-stroke-2 text-stroke-gray-mix text-white"
+				class="scheme-dark flex min-h-screen w-full items-center justify-center bg-pattern bg-repeat font-sans text-stroke-2 text-stroke-gray-50 text-white [image-rendering:pixelated] [paint-order:stroke_fill]"
 			>
 				{children}
 			</body>

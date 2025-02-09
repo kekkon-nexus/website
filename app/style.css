@@ -9,10 +9,15 @@
 	--color-*: initial;
 	--shadow-*: initial;
 
-	--color-white: #fff;
+	--color-yvvki: #f476b0;
+	--color-kekkon: #27d4d9;
+	--color-suhartanto: #fad940;
+
+	--color-gray-50: #1f1f1f;
+	--color-gray-100: #2a2a2a;
+
 	--color-black: #000;
-	--color-gray: #2a2a2a;
-	--color-gray-mix: #1f1f1f;
+	--color-white: #fff;
 
 	--background-image-pattern: url("/static/bg.gif");
 
@@ -20,16 +25,16 @@
 
 	@keyframes nexus {
 		0% {
-			color: #f476b0;
+			color: var(--color-yvvki);
 		}
 		33.333% {
-			color: #27d4d9;
+			color: var(--color-kekkon);
 		}
 		66.667% {
-			color: #fad940;
+			color: var(--color-suhartanto);
 		}
 		100% {
-			color: #f476b0;
+			color: var(--color-yvvki);
 		}
 	}
 }
@@ -40,18 +45,9 @@
 	font-style: normal;
 	font-weight: 400 700;
 	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/notosansjavanese/v23/2V0AKJkDAIA6Hp4zoSScDjV0Y-eoHAH507U9dp0.woff2)
-		format("woff2");
+	src: url(https://fonts.gstatic.com/s/notosansjavanese/v23/2V0AKJkDAIA6Hp4zoSScDjV0Y-eoHAH507U9dp0.woff2) format("woff2");
 	unicode-range: U+200C-200D, U+25CC, U+A980-A9DF;
 	ascent-override: 175%;
-}
-
-@utility image-pixelated {
-	image-rendering: pixelated;
-}
-
-@utility writing-vertical {
-	writing-mode: vertical-lr;
 }
 
 @utility font-display {
@@ -62,11 +58,7 @@
 	font-variation-settings: "MONO" 1;
 }
 
-@utility text-stroke-2 {
-	paint-order: stroke fill;
-	-webkit-text-stroke-width: 0.5rem;
-}
-
-@utility text-stroke-gray-mix {
-	-webkit-text-stroke-color: var(--color-gray-mix);
+@utility text-stroke-* {
+	-webkit-text-stroke-width: calc(var(--spacing) * --value(integer));
+	-webkit-text-stroke-color: --value(--color-*);
 }

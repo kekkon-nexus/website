@@ -3,6 +3,8 @@ compatibility_date = "2025-01-24"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "./dist"
 
+build.command = "bun install --frozen-lockfile && bun run build"
+
 [vars]
 BUN_VERSION = "1.2.2"
 

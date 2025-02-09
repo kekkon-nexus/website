@@ -2,6 +2,9 @@
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.insertSpaces": false,
 	"editor.tabSize": 2,
+	"files.associations": {
+		"style.css": "tailwindcss",
+	},
 	"[yaml]": {
 		"editor.defaultFormatter": "redhat.vscode-yaml",
 		"editor.insertSpaces": true

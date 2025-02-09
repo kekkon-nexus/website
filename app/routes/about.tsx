@@ -1,7 +1,7 @@
 export default () => (
 	<>
 		<main class="max-w-240 p-20">
-			<h1 class="text-4xl font-bold">
+			<h1 class="font-bold text-4xl">
 				{/* biome-ignore lint/a11y/useValidAnchor: current */}
 				<a href="#">/about</a>
 			</h1>
@@ -18,7 +18,7 @@ export default () => (
 
 			<br />
 
-			<h2 id="mission" class="text-2xl font-bold">
+			<h2 id="mission" class="font-bold text-2xl">
 				<a href="#mission">#mission</a>
 			</h2>
 			<p>
@@ -30,10 +30,10 @@ export default () => (
 
 			<br />
 
-			<h2 id="management" class="text-2xl font-bold">
+			<h2 id="management" class="font-bold text-2xl">
 				<a href="#management">#management</a>
 			</h2>
-			<ul class="pl-4 list-disc">
+			<ul class="list-disc pl-4">
 				<li class="pt-2">
 					<b>Ryan Suhartanto</b>
 					<br />
@@ -51,7 +51,7 @@ export default () => (
 
 			<br />
 
-			<h2 id="contact" class="text-2xl font-bold">
+			<h2 id="contact" class="font-bold text-2xl">
 				<a href="#contact">#contact</a>
 			</h2>
 			<a href="mailto:suhartanto@kekkon.nexus">suhartanto@kekkon.nexus</a>

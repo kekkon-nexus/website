@@ -1,17 +1,30 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.1/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		}
-	},
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": true,
+		"defaultBranch": "main"
+	},
+	"linter": {
+		"rules": {
+			"nursery": {
+				"useSortedClasses": {
+					"level": "info",
+					"fix": "safe",
+					"options": {
+						"attributes": ["class"]
+					}
+				}
+			}
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": true
+		},
+		"linter": {
+			"enabled": true
+		}
 	}
 }

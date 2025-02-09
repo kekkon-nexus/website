@@ -5,6 +5,7 @@ pages_build_output_dir = "./dist"
 
 [vars]
 BUN_VERSION = "1.2.2"
+NODE_VERSION = "22.13.1"
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"

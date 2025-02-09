@@ -3,8 +3,8 @@ compatibility_date = "2025-01-24"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "./dist"
 
-# [vars]
-# MY_VAR = "my-variable"
+[vars]
+BUN_VERSION = "1.2.2"
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"

@@ -20,9 +20,12 @@
 	--color-white: #fff;
 
 	--background-image-pattern: url("/static/bg.gif");
+	--background-image-awareness: url("/static/awareness.png");
 
 	--animate-nexus: nexus 10s linear infinite;
-
+	--animate-bg-marquee: marquee 120s linear infinite;
+	--animate-spin: spin 20s linear infinite;
+	
 	@keyframes nexus {
 		0% {
 			color: var(--color-yvvki);
@@ -36,6 +39,15 @@
 		100% {
 			color: var(--color-yvvki);
 		}
+	}
+
+	@keyframes marquee {
+		0% { background-position: 0% 0%; }
+		100% { background-position: -100% -100%; }
+	}
+
+	@keyframes spin {
+		100% { rotate: 360deg; }
 	}
 }
 
@@ -57,7 +69,25 @@
 	ascent-override: 175%;
 }
 
+@property --nexus-spin {
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 0deg;
+}
 
+@keyframes nexus-spin {
+	100% { --nexus-spin: 360deg }
+}
+
+@utility bg-nexus-gradient {
+	width: 100%; height: 100%;
+  background-image: conic-gradient(from var(--nexus-spin), var(--color-kekkon), var(--color-suhartanto), var(--color-kekkon), var(--color-yvvki), var(--color-kekkon));
+	animation: nexus-spin linear 100s infinite;
+}
+
+@utility mask-circle {
+	mask-image: radial-gradient(circle closest-side, #0000 79.6%, #000 80%);
+}
 
 @utility font-display {
 	font-variation-settings: "MONO" 1, "CASL" 0.5, "CRSV" 1;

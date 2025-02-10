@@ -3,7 +3,7 @@ export default () => (
 		<svg
 			viewBox="0 0 100 100"
 			xmlns="http://www.w3.org/2000/svg"
-			class="mask-circle -z-40 absolute top-0 h-full w-full overflow-hidden blur-[66px]"
+			class="mask-circle -z-40 absolute top-0 h-full w-full overflow-hidden mix-blend-lighten blur-[66px]"
 		>
 			<title>Ring</title>
 

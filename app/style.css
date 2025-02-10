@@ -86,7 +86,7 @@
 }
 
 @utility mask-circle {
-	mask-image: radial-gradient(circle closest-side, #0000 79.6%, #000 80%);
+	mask-image: radial-gradient(circle closest-side, #0000 79.443%, #000 80%);
 }
 
 @utility font-display {

@@ -37,15 +37,15 @@ export default () => (
 				<li class="pt-2">
 					<b>Ryan Suhartanto</b>
 					<br />
-					Responsible for business, legal, and economic aspects.
+					Responsible for business strategy, legal compliance, and financial
+					management.
 				</li>
 				<li class="pt-2">
 					<b>Yuuki Rika</b>
 					<br />
-					Embodies the creative spirit of Kekkon Nexus. Yuuki Rika represents a
-					playful and imaginative approach, often described as a "silly
-					programmer cat" with a strong inclination toward femboy aesthetics and
-					Japanese subcultures.
+					Embodies the creative spirit through a playful and imaginative
+					approach. Known as a "silly programmer cat" who embraces femboy
+					aesthetics and Japanese subcultures.
 				</li>
 			</ul>
 

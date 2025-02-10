@@ -23,7 +23,7 @@
 	--background-image-awareness: url("/static/awareness.png");
 
 	--animate-nexus: nexus 10s linear infinite;
-	--animate-bg-marquee: marquee 120s linear infinite;
+	--animate-bg-marquee: marquee 150s linear infinite;
 	--animate-spin: spin 20s linear infinite;
 	
 	@keyframes nexus {

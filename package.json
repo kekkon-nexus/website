@@ -1,6 +1,5 @@
 {
 	"name": "@kekkon.nexus/website",
-	"version": "1.0.0",
 	"homepage": "https://kekkon.nexus",
 	"repository": "kekkon-nexus:website",
 	"bugs": {
@@ -19,22 +18,22 @@
 		"deploy": "bun run build && wrangler pages deploy"
 	},
 	"dependencies": {
-		"hono": "^4.7.0",
-		"honox": "^0.1.34"
+		"hono": "^4.12.12",
+		"honox": "^0.1.55"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@cloudflare/workers-types": "^4.20250204.0",
-		"@hono/vite-build": "^1.3.0",
-		"@hono/vite-dev-server": "^0.18.1",
+		"@biomejs/biome": "~2.4",
+		"@cloudflare/workers-types": "^4.20260412.1",
+		"@hono/vite-build": "^1.11.1",
+		"@hono/vite-dev-server": "^0.25.1",
 		"@rollup/plugin-inject": "^5.0.5",
-		"@tailwindcss/vite": "^4.0.5",
-		"htmx-ext-preload": "^2.1.0",
-		"htmx.org": "^2.0.4",
-		"tailwindcss": "^4.0.5",
+		"@tailwindcss/vite": "^4.2.2",
+		"htmx-ext-preload": "^2.1.2",
+		"htmx.org": "^2.0.8",
+		"tailwindcss": "^4.2.2",
 		"typed-htmx": "^0.3.1",
-		"vite": "^6.1.0",
-		"wrangler": "^3.107.3"
+		"vite": "^8.0.8",
+		"wrangler": "^4.81.1"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

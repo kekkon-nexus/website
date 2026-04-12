@@ -1,30 +1,8 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"useIgnoreFile": true,
-		"defaultBranch": "main"
-	},
-	"linter": {
-		"rules": {
-			"nursery": {
-				"useSortedClasses": {
-					"level": "info",
-					"fix": "safe",
-					"options": {
-						"attributes": ["class"]
-					}
-				}
-			}
-		}
-	},
-	"css": {
-		"formatter": {
-			"enabled": true
-		},
-		"linter": {
-			"enabled": true
-		}
-	}
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"root": true,
+	"extends": [
+		"@kekkon-nexus/config/biome",
+		"@kekkon-nexus/config/biome/imports"
+	]
 }

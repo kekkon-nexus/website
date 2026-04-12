@@ -12,6 +12,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"prepare": "husky",
 		"dev": "vite",
 		"build": "vite build --mode client && vite build",
 		"preview": "wrangler pages dev",
@@ -24,16 +25,22 @@
 	"devDependencies": {
 		"@biomejs/biome": "~2.4",
 		"@cloudflare/workers-types": "^4.20260412.1",
+		"@commitlint/cli": "^20.5.0",
+		"@commitlint/config-conventional": "^20.5.0",
+		"@commitlint/format": "^20.5.0",
+		"@commitlint/types": "^20.5.0",
 		"@hono/vite-build": "^1.11.1",
 		"@hono/vite-dev-server": "^0.25.1",
+		"@kekkon-nexus/config": "^1.251225.0",
 		"@rollup/plugin-inject": "^5.0.5",
 		"@tailwindcss/vite": "^4.2.2",
+		"conventional-changelog-conventionalcommits": "^9.3.1",
 		"htmx-ext-preload": "^2.1.2",
 		"htmx.org": "^2.0.8",
+		"husky": "^9.1.7",
 		"tailwindcss": "^4.2.2",
 		"typed-htmx": "^0.3.1",
 		"vite": "^8.0.8",
 		"wrangler": "^4.81.1"
-	},
-	"trustedDependencies": ["@biomejs/biome"]
+	}
 }

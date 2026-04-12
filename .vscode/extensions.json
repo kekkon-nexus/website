@@ -1,5 +1,6 @@
 {
 	"recommendations": [
+		"editorconfig.editorconfig",
 		"biomejs.biome",
 		"bradlc.vscode-tailwindcss"
 	]
